@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
+    "daily": "bash scripts/start-dev.sh",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "verify:links": "node scripts/verify-official-links.mjs"
+    "verify:links": "node scripts/verify-official-links.mjs",
+    "ship": "bash scripts/save-and-deploy.sh",
+    "check:deploy": "bash scripts/check-deploy.sh"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.105.1",

@@ -21,10 +21,32 @@
 
 ## 2. 실행 방법
 
+매일 작업 시작:
+
+```bash
+npm run daily
+```
+
+또는 기본 개발 서버:
+
 ```bash
 npm install
 npm run dev
 ```
+
+작업 완료 후 GitHub push + Vercel 자동 배포:
+
+```bash
+npm run ship -- "feat: 수정 내용 요약"
+```
+
+배포 확인:
+
+```bash
+npm run check:deploy
+```
+
+자세한 반복 작업 방식은 `DAILY-WORKFLOW.md`를 참고하세요.
 
 빌드 확인:
 
